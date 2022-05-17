@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-
+//MARK:- CARD MODEL
 
 struct Card : Identifiable{
     
@@ -17,8 +17,8 @@ struct Card : Identifiable{
     var headline : String
     var imageName : String
     var callToAction :String
-    var messages : String
-    var gredientColors : [Color]
+    var message : String
+    var gradientColors : [Color]
     
     
 }
