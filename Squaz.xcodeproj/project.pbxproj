@@ -13,6 +13,7 @@
 		FA6054AF2832DF1D00220E38 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA6054AE2832DF1D00220E38 /* Preview Assets.xcassets */; };
 		FA6054B62832DF3D00220E38 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA6054B52832DF3D00220E38 /* Launch Screen.storyboard */; };
 		FAB476622833FE2800DD1DD1 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB476612833FE2800DD1DD1 /* CardView.swift */; };
+		FAB4766428342C2B00DD1DD1 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB4766328342C2B00DD1DD1 /* CardModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		FA6054AE2832DF1D00220E38 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FA6054B52832DF3D00220E38 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		FAB476612833FE2800DD1DD1 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		FAB4766328342C2B00DD1DD1 /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				FA6054AB2832DF1D00220E38 /* Assets.xcassets */,
 				FA6054AD2832DF1D00220E38 /* Preview Content */,
 				FA6054B52832DF3D00220E38 /* Launch Screen.storyboard */,
+				FAB4766328342C2B00DD1DD1 /* CardModel.swift */,
 			);
 			path = Squaz;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA6054AA2832DF1A00220E38 /* ContentView.swift in Sources */,
+				FAB4766428342C2B00DD1DD1 /* CardModel.swift in Sources */,
 				FAB476622833FE2800DD1DD1 /* CardView.swift in Sources */,
 				FA6054A82832DF1A00220E38 /* SquazApp.swift in Sources */,
 			);
