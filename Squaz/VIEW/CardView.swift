@@ -10,27 +10,38 @@ import SwiftUI
 struct CardView: View {
     //MARK: - PROPERTIES
     var card : Card
-    
+    @State private var FadeIn = false
+    @State private var moveText = false
+    @State private var moveButton = false
     //MARK: - BODY
     var body: some View {
        
         
         
         ZStack {
+            //DEVELOPER IMAGE
             Image(card.imageName)
+                .opacity(FadeIn ? 1.0 : 0.0)
           
             VStack {
-                Text(card.title).foregroundColor(.white)
-                    .font(.largeTitle)
-                    .bold()
+                //TITLE
+                VStack {
+                    Text(card.title).foregroundColor(.white)
+                        .font(.largeTitle)
+                        .bold()
                     .padding(.top,10)
-                
-                
-                Text(card.headline)
+                    //HEADLINE
+                    Text(card.headline)
                     .foregroundColor(.white).italic()
+                }.offset(y: moveText ? 20 : -218 )
+                
+                
                 Spacer()
-               
-                Button(action:{}){
+               //BUTTON
+                Button(action:{
+                    playSound(Sound: "sound-chime", Type: "mp3")
+                    
+                }){
                     
                    
                     Text(card.callToAction)
@@ -41,6 +52,7 @@ struct CardView: View {
                 }.padding(.vertical).padding(.horizontal,30)
                     .background(LinearGradient(gradient: Gradient(colors: card.gradientColors), startPoint: .leading, endPoint: .trailing)).clipShape(RoundedRectangle(cornerRadius: 25, style: .continuous)).padding().foregroundColor(.white)
                     .shadow(color: Color("ColorShadow"), radius: 6, x: 0, y: 3)
+                    .offset(y: moveButton ? -20 : 10)
             }
        
         
@@ -50,7 +62,24 @@ struct CardView: View {
         .frame(width: 335, height: 545)
         .background(LinearGradient(gradient: Gradient(colors: card.gradientColors), startPoint: .top, endPoint: .bottom))
         .clipShape(RoundedRectangle(cornerRadius: 25, style: .continuous))
+       
+        .onAppear(){
+            //FADE IN IMAGE
+            withAnimation(.linear(duration: 1.2)){
+                
+                self.FadeIn.toggle()
+            }
+            
+           // MOVE THE TEXT
         
+            withAnimation(.linear(duration: 0.8)){
+                
+                self.moveText.toggle()
+                self.moveButton.toggle()
+            }
+            
+        }
+       
     }
 }
 
