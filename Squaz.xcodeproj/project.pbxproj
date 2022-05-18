@@ -7,23 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA05FF7F28358EBB008F6A14 /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05FF7E28358EBB008F6A14 /* PlaySound.swift */; };
+		FA05FF8128358EE7008F6A14 /* sound-chime.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA05FF8028358EE7008F6A14 /* sound-chime.mp3 */; };
 		FA6054A82832DF1A00220E38 /* SquazApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6054A72832DF1A00220E38 /* SquazApp.swift */; };
 		FA6054AA2832DF1A00220E38 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6054A92832DF1A00220E38 /* ContentView.swift */; };
 		FA6054AC2832DF1D00220E38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA6054AB2832DF1D00220E38 /* Assets.xcassets */; };
 		FA6054AF2832DF1D00220E38 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA6054AE2832DF1D00220E38 /* Preview Assets.xcassets */; };
-		FA6054B62832DF3D00220E38 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA6054B52832DF3D00220E38 /* Launch Screen.storyboard */; };
 		FAB476622833FE2800DD1DD1 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB476612833FE2800DD1DD1 /* CardView.swift */; };
 		FAB4766428342C2B00DD1DD1 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB4766328342C2B00DD1DD1 /* CardModel.swift */; };
 		FAB4766628342E2000DD1DD1 /* CardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB4766528342E2000DD1DD1 /* CardData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FA6054A42832DF1A00220E38 /* Squaz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Squaz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA05FF7E28358EBB008F6A14 /* PlaySound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
+		FA05FF8028358EE7008F6A14 /* sound-chime.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-chime.mp3"; sourceTree = "<group>"; };
+		FA6054A42832DF1A00220E38 /* SquazApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SquazApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA6054A72832DF1A00220E38 /* SquazApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquazApp.swift; sourceTree = "<group>"; };
 		FA6054A92832DF1A00220E38 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FA6054AB2832DF1D00220E38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA6054AE2832DF1D00220E38 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		FA6054B52832DF3D00220E38 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		FAB476612833FE2800DD1DD1 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		FAB4766328342C2B00DD1DD1 /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
 		FAB4766528342E2000DD1DD1 /* CardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardData.swift; sourceTree = "<group>"; };
@@ -51,7 +53,7 @@
 		FA6054A52832DF1A00220E38 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FA6054A42832DF1A00220E38 /* Squaz.app */,
+				FA6054A42832DF1A00220E38 /* SquazApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -59,14 +61,13 @@
 		FA6054A62832DF1A00220E38 /* Squaz */ = {
 			isa = PBXGroup;
 			children = (
-				FA6054A72832DF1A00220E38 /* SquazApp.swift */,
-				FA6054A92832DF1A00220E38 /* ContentView.swift */,
-				FAB476612833FE2800DD1DD1 /* CardView.swift */,
+				FA05FF8028358EE7008F6A14 /* sound-chime.mp3 */,
+				FAB476692834C79600DD1DD1 /* VIEW MODEL */,
+				FAB476682834C77000DD1DD1 /* MODEL */,
+				FAB476672834C73000DD1DD1 /* VIEW */,
 				FA6054AB2832DF1D00220E38 /* Assets.xcassets */,
 				FA6054AD2832DF1D00220E38 /* Preview Content */,
-				FA6054B52832DF3D00220E38 /* Launch Screen.storyboard */,
-				FAB4766328342C2B00DD1DD1 /* CardModel.swift */,
-				FAB4766528342E2000DD1DD1 /* CardData.swift */,
+				FA05FF7E28358EBB008F6A14 /* PlaySound.swift */,
 			);
 			path = Squaz;
 			sourceTree = "<group>";
@@ -77,6 +78,32 @@
 				FA6054AE2832DF1D00220E38 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FAB476672834C73000DD1DD1 /* VIEW */ = {
+			isa = PBXGroup;
+			children = (
+				FA6054A72832DF1A00220E38 /* SquazApp.swift */,
+				FA6054A92832DF1A00220E38 /* ContentView.swift */,
+				FAB476612833FE2800DD1DD1 /* CardView.swift */,
+			);
+			path = VIEW;
+			sourceTree = "<group>";
+		};
+		FAB476682834C77000DD1DD1 /* MODEL */ = {
+			isa = PBXGroup;
+			children = (
+				FAB4766328342C2B00DD1DD1 /* CardModel.swift */,
+			);
+			path = MODEL;
+			sourceTree = "<group>";
+		};
+		FAB476692834C79600DD1DD1 /* VIEW MODEL */ = {
+			isa = PBXGroup;
+			children = (
+				FAB4766528342E2000DD1DD1 /* CardData.swift */,
+			);
+			path = "VIEW MODEL";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,7 +123,7 @@
 			);
 			name = Squaz;
 			productName = Squaz;
-			productReference = FA6054A42832DF1A00220E38 /* Squaz.app */;
+			productReference = FA6054A42832DF1A00220E38 /* SquazApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -137,8 +164,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA6054B62832DF3D00220E38 /* Launch Screen.storyboard in Resources */,
 				FA6054AF2832DF1D00220E38 /* Preview Assets.xcassets in Resources */,
+				FA05FF8128358EE7008F6A14 /* sound-chime.mp3 in Resources */,
 				FA6054AC2832DF1D00220E38 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAB4766628342E2000DD1DD1 /* CardData.swift in Sources */,
+				FA05FF7F28358EBB008F6A14 /* PlaySound.swift in Sources */,
 				FA6054AA2832DF1A00220E38 /* ContentView.swift in Sources */,
 				FAB4766428342C2B00DD1DD1 /* CardModel.swift in Sources */,
 				FAB476622833FE2800DD1DD1 /* CardView.swift in Sources */,
@@ -297,7 +325,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.immaxp.Squaz;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SquazApp;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -326,7 +354,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.immaxp.Squaz;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SquazApp;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
