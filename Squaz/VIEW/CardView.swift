@@ -8,16 +8,19 @@
 import SwiftUI
 
 struct CardView: View {
+  
     //MARK: - PROPERTIES
+    
     var card : Card
     @State private var FadeIn = false
     @State private var moveText = false
     @State private var moveButton = false
+    var haptic = UIImpactFeedbackGenerator(style: .heavy)
+    @State var showAlert = false
     //MARK: - BODY
+  
     var body: some View {
        
-        
-        
         ZStack {
             //DEVELOPER IMAGE
             Image(card.imageName)
@@ -40,7 +43,8 @@ struct CardView: View {
                //BUTTON
                 Button(action:{
                     playSound(Sound: "sound-chime", Type: "mp3")
-                    
+                    self.haptic.impactOccurred()
+                    self.showAlert.toggle()
                 }){
                     
                    
@@ -79,7 +83,13 @@ struct CardView: View {
             }
             
         }
-       
+        .alert(isPresented: $showAlert ) {
+            Alert(
+            title: Text(card.title),
+            message: Text(card.message),
+            dismissButton: .default(Text("OK"))
+            )
+        }
     }
 }
 
